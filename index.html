@@ -1,0 +1,1503 @@
+
+<html lang="en">
+
+  <head>
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme:
+        {
+          extend:
+          {
+            colors:
+            {
+              'brand-teal': '#4A9B9B',
+              'brand-sage': '#8BA888',
+              'brand-cream': '#F5F1E8',
+              'brand-navy': '#2C3E50'
+            },
+            fontFamily:
+            {
+              'sans': ['Montserrat', 'sans-serif'],
+              'serif': ['Playfair Display', 'serif']
+            }
+          }
+        }
+      }
+    </script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&amp;family=Playfair+Display:wght@400;500;600;700&amp;display=swap"
+      rel="stylesheet">
+    <script>
+      window.FontAwesomeConfig = {
+        autoReplaceSvg: 'nest'
+      };
+    </script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"
+      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <style>
+      ::-webkit-scrollbar
+      {
+        display: none;
+      }
+
+      @keyframes fadeInUp
+      {
+        from
+        {
+          opacity: 0;
+          transform: translateY(30px);
+        }
+
+        to
+        {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      @keyframes fadeIn
+      {
+        from
+        {
+          opacity: 0;
+        }
+
+        to
+        {
+          opacity: 1;
+        }
+      }
+
+      @keyframes slideIn
+      {
+        from
+        {
+          opacity: 0;
+          transform: translateX(-30px);
+        }
+
+        to
+        {
+          opacity: 1;
+          transform: translateX(0);
+        }
+      }
+
+      .animate-fade-in-up
+      {
+        animation: fadeInUp 1s ease-out forwards;
+      }
+
+      .animate-fade-in
+      {
+        animation: fadeIn 1.5s ease-out forwards;
+      }
+
+      .animate-slide-in
+      {
+        animation: slideIn 1s ease-out forwards;
+      }
+
+      .delay-200
+      {
+        animation-delay: 0.2s;
+      }
+
+      .delay-400
+      {
+        animation-delay: 0.4s;
+      }
+
+      .delay-600
+      {
+        animation-delay: 0.6s;
+      }
+
+      .delay-800
+      {
+        animation-delay: 0.8s;
+      }
+
+      .hover-lift
+      {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      .hover-lift:hover
+      {
+        transform: translateY(-8px);
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+      }
+
+      .bg-gradient-overlay
+      {
+        background: linear-gradient(135deg, rgba(74, 155, 155, 0.9) 0%, rgba(139, 168, 136, 0.85) 100%);
+      }
+
+      .chat-bubble
+      {
+        animation: pulse 2s infinite;
+      }
+
+      @keyframes pulse
+      {
+
+        0%,
+        100%
+        {
+          transform: scale(1);
+        }
+
+        50%
+        {
+          transform: scale(1.05);
+        }
+      }
+    </style>
+    <style data-grapesjs-styles="true">
+      *
+      {
+        box-sizing: border-box;
+      }
+
+      body
+      {
+        margin: 0;
+      }
+
+      ::-webkit-scrollbar
+      {
+        display: none;
+      }
+
+      .animate-fade-in-up
+      {
+        animation-duration: 1s;
+        animation-timing-function: ease-out;
+        animation-delay: 0s;
+        animation-iteration-count: 1;
+        animation-direction: normal;
+        animation-fill-mode: forwards;
+        animation-play-state: running;
+        animation-name: fadeInUp;
+        animation-timeline: auto;
+        animation-range-start: normal;
+        animation-range-end: normal;
+      }
+
+      .delay-200
+      {
+        animation-delay: 0.2s;
+      }
+
+      .delay-400
+      {
+        animation-delay: 0.4s;
+      }
+
+      .hover-lift
+      {
+        transition-behavior: normal, normal;
+        transition-duration: 0.3s, 0.3s;
+        transition-timing-function: ease, ease;
+        transition-delay: 0s, 0s;
+        transition-property: transform, box-shadow;
+      }
+
+      .hover-lift:hover
+      {
+        transform: translateY(-8px);
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 40px;
+      }
+
+      .bg-gradient-overlay
+      {
+        background-image: linear-gradient(135deg, rgba(74, 155, 155, 0.9) 0%, rgba(139, 168, 136, 0.85) 100%);
+        background-position-x: initial;
+        background-position-y: initial;
+        background-size: initial;
+        background-repeat: initial;
+        background-attachment: initial;
+        background-origin: initial;
+        background-clip: initial;
+        background-color: initial;
+      }
+
+      .chat-bubble
+      {
+        animation-duration: 2s;
+        animation-timing-function: ease;
+        animation-delay: 0s;
+        animation-iteration-count: infinite;
+        animation-direction: normal;
+        animation-fill-mode: none;
+        animation-play-state: running;
+        animation-name: pulse;
+        animation-timeline: auto;
+        animation-range-start: normal;
+        animation-range-end: normal;
+      }
+
+      #i9xqo
+      {
+        position: static;
+        top: 0px;
+        padding: 0px;
+        margin: 0px;
+      }
+
+      @keyframes fadeInUp
+      {
+        0%
+        {
+          opacity: 0;
+          transform: translateY(30px);
+        }
+
+        100%
+        {
+          opacity: 1;
+          transform: translateY(0px);
+        }
+      }
+
+      @keyframes fadeIn
+      {
+        0%
+        {
+          opacity: 0;
+        }
+
+        100%
+        {
+          opacity: 1;
+        }
+      }
+
+      @keyframes slideIn
+      {
+        0%
+        {
+          opacity: 0;
+          transform: translateX(-30px);
+        }
+
+        100%
+        {
+          opacity: 1;
+          transform: translateX(0px);
+        }
+      }
+
+      @keyframes pulse
+      {
+
+        0%,
+        100%
+        {
+          transform: scale(1);
+        }
+
+        50%
+        {
+          transform: scale(1.05);
+        }
+      }
+    </style>
+  </head>
+
+  <body class="font-sans">
+    <header id="header"
+      class="fixed w-full top-0 z-50 bg-brand-teal/95 backdrop-blur-sm shadow-lg transition-all duration-300">
+      <div class="max-w-[1400px] mx-auto px-8 py-4">
+        <div class="flex items-center justify-between">
+          <div class="absolute left-8"></div><img
+            src="https://static.wixstatic.com/media/b6cbd2_9ffc3d88afcf47b1992aaa7cf810abe0~mv2.png/v1/fill/w_112,h_110,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Screen%20Shot%202022-10-19%20at%204_28_edited_pn.png"
+            alt="Andrea &amp; Associates Logo" class="h-20 w-auto" id="i9xqo">
+          <nav class="flex items-center space-x-8 ml-auto"><a href="#home"
+              class="text-white font-medium hover:text-brand-cream transition-colors duration-300 relative group">
+              Home
+              <span
+                class="absolute bottom-0 left-0 w-0 h-0.5 bg-brand-cream group-hover:w-full transition-all duration-300"></span></a><a
+              href="#about"
+              class="text-white font-medium hover:text-yellow-200 transition-colors duration-300 relative group">
+              About Us
+              <span
+                class="absolute bottom-0 left-0 w-0 h-0.5 bg-yellow-200 group-hover:w-full transition-all duration-300"></span></a><a
+              href="#services"
+              class="text-white font-medium hover:text-green-200 transition-colors duration-300 relative group">
+              Services
+              <span
+                class="absolute bottom-0 left-0 w-0 h-0.5 bg-green-200 group-hover:w-full transition-all duration-300"></span></a><a
+              href="#team"
+              class="text-white font-medium hover:text-blue-200 transition-colors duration-300 relative group">
+              Our Team
+              <span
+                class="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-200 group-hover:w-full transition-all duration-300"></span></a><a
+              href="#testimonials"
+              class="text-white font-medium hover:text-pink-200 transition-colors duration-300 relative group">
+              Testimonials
+              <span
+                class="absolute bottom-0 left-0 w-0 h-0.5 bg-pink-200 group-hover:w-full transition-all duration-300"></span></a><a
+              href="#resources"
+              class="text-white font-medium hover:text-purple-200 transition-colors duration-300 relative group">
+              Resources
+              <span
+                class="absolute bottom-0 left-0 w-0 h-0.5 bg-purple-200 group-hover:w-full transition-all duration-300"></span></a><a
+              href="#contact"
+              class="text-white font-medium hover:text-orange-200 transition-colors duration-300 relative group">
+              Contact
+              <span
+                class="absolute bottom-0 left-0 w-0 h-0.5 bg-orange-200 group-hover:w-full transition-all duration-300"></span></a><a
+              href="#contact"
+              class="bg-white text-brand-teal px-6 py-2.5 rounded-full font-semibold hover:bg-brand-cream hover:scale-105 transition-all duration-300 shadow-lg">
+              Book Appointment
+            </a></nav>
+        </div>
+      </div>
+    </header>
+    <section id="hero-section"
+      class="relative h-[800px] flex items-center justify-center overflow-hidden">
+      <div class="absolute inset-0"><img
+          src="https://static.wixstatic.com/media/b6cbd2_c92860c799124fce9d32cc7c80b4adb1~mv2.jpg/v1/fill/w_3818,h_1194,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/b6cbd2_c92860c799124fce9d32cc7c80b4adb1~mv2.jpg"
+          alt="Peaceful therapy environment" class="w-full h-full object-cover">
+        <div class="absolute inset-0 bg-gradient-overlay"></div>
+      </div>
+      <div class="relative z-10 max-w-5xl mx-auto px-8 text-center">
+        <h1
+          class="text-6xl md:text-7xl font-serif font-bold text-white mb-6 animate-fade-in-up opacity-0">
+          Your Journey to Wellness Starts Here
+        </h1>
+        <p
+          class="text-2xl text-white/95 mb-8 font-light animate-fade-in-up opacity-0 delay-200">
+          Compassionate, holistic therapy and counseling services for
+          individuals, families, and groups
+        </p>
+        <div
+          class="flex justify-center gap-6 animate-fade-in-up opacity-0 delay-400">
+          <a href="#services"
+            class="bg-white text-brand-teal px-8 py-4 rounded-full font-semibold text-lg hover:bg-brand-cream hover:scale-105 transition-all duration-300 shadow-2xl">
+            Explore Our Services
+          </a><a href="#contact"
+            class="bg-transparent border-2 border-white text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-white hover:text-brand-teal transition-all duration-300">
+            Schedule Consultation
+          </a></div>
+      </div>
+    </section>
+    <section id="welcome-section" class="py-24 bg-brand-cream">
+      <div class="max-w-7xl mx-auto px-8">
+        <div class="grid md:grid-cols-2 gap-16 items-center">
+          <div class="space-y-6">
+            <h2 class="text-5xl font-serif font-bold text-brand-navy mb-6">
+              Welcome to Andrea &amp; Associates</h2>
+            <p class="text-lg text-gray-700 leading-relaxed">
+              At Andrea &amp; Associates, we believe in the power of
+              collaborative healing. Our practice specializes in providing
+              comprehensive mental health services that address the whole
+              person—mind, body, and spirit.
+            </p>
+            <p class="text-lg text-gray-700 leading-relaxed">
+              With years of experience in individual therapy, group counseling,
+              substance-use treatment, and family wellness programs, our
+              dedicated team is committed to helping you navigate life's
+              challenges with compassion and expertise.
+            </p>
+            <div class="grid grid-cols-2 gap-6 pt-6">
+              <div
+                class="text-center p-6 bg-white rounded-2xl shadow-lg hover-lift">
+                <div class="text-4xl font-bold text-brand-teal mb-2">15+</div>
+                <div class="text-gray-600 font-medium">Years Experience</div>
+              </div>
+              <div
+                class="text-center p-6 bg-white rounded-2xl shadow-lg hover-lift">
+                <div class="text-4xl font-bold text-brand-teal mb-2">1000+</div>
+                <div class="text-gray-600 font-medium">Lives Transformed</div>
+              </div>
+            </div>
+          </div>
+          <div class="relative">
+            <div
+              class="absolute inset-0 bg-brand-teal/20 rounded-3xl transform rotate-3">
+            </div>
+            <div class="relative bg-white p-8 rounded-3xl shadow-2xl"><img
+                src="https://storage.googleapis.com/uxpilot-auth.appspot.com/9be6ef750e-47486388a1f488814d17.png"
+                alt="professional therapist counseling session, warm office setting, natural light, modern interior design"
+                class="w-full h-96 object-cover rounded-2xl mb-6">
+              <h3
+                class="text-2xl font-serif font-semibold text-brand-navy mb-4">
+                Our Approach</h3>
+              <p class="text-gray-700 leading-relaxed">
+                We combine evidence-based therapeutic techniques with a holistic
+                understanding of wellness, creating personalized treatment plans
+                that honor your unique journey.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="services" class="py-24 bg-white">
+      <div class="max-w-7xl mx-auto px-8">
+        <div class="text-center mb-16">
+          <h2 class="text-5xl font-serif font-bold text-brand-navy mb-6">
+            Comprehensive Services</h2>
+          <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+            We offer a wide range of therapeutic services tailored to meet your
+            individual needs and support your path to wellness
+          </p>
+        </div>
+        <div class="grid md:grid-cols-3 gap-8">
+          <div id="service-individual"
+            class="bg-gradient-to-br from-brand-teal/10 to-brand-sage/10 p-8 rounded-3xl hover-lift">
+            <div
+              class="w-16 h-16 bg-brand-teal rounded-2xl flex items-center justify-center mb-6">
+              <i class="fa-solid fa-user text-white text-2xl"></i></div>
+            <h3 class="text-2xl font-serif font-semibold text-brand-navy mb-4">
+              Individual Therapy</h3>
+            <p class="text-gray-700 leading-relaxed mb-6">
+              One-on-one sessions focused on your personal growth, addressing
+              anxiety, depression, trauma, and life transitions with
+              compassionate, evidence-based approaches.
+            </p>
+            <ul class="space-y-3 text-gray-700">
+              <li class="flex items-start"><i
+                  class="fa-solid fa-check text-brand-teal mt-1 mr-3"></i><span>Cognitive
+                  Behavioral Therapy (CBT)</span></li>
+              <li class="flex items-start"><i
+                  class="fa-solid fa-check text-brand-teal mt-1 mr-3"></i><span>Mindfulness-Based
+                  Therapy</span></li>
+              <li class="flex items-start"><i
+                  class="fa-solid fa-check text-brand-teal mt-1 mr-3"></i><span>Trauma-Informed
+                  Care</span></li>
+            </ul>
+          </div>
+          <div id="service-group"
+            class="bg-gradient-to-br from-brand-sage/10 to-brand-teal/10 p-8 rounded-3xl hover-lift">
+            <div
+              class="w-16 h-16 bg-brand-sage rounded-2xl flex items-center justify-center mb-6">
+              <i class="fa-solid fa-users text-white text-2xl"></i></div>
+            <h3 class="text-2xl font-serif font-semibold text-brand-navy mb-4">
+              Group Therapy</h3>
+            <p class="text-gray-700 leading-relaxed mb-6">
+              Connect with others facing similar challenges in a supportive
+              environment. Our group sessions foster community, shared healing,
+              and collective growth.
+            </p>
+            <ul class="space-y-3 text-gray-700">
+              <li class="flex items-start"><i
+                  class="fa-solid fa-check text-brand-sage mt-1 mr-3"></i><span>Support
+                  Groups</span></li>
+              <li class="flex items-start"><i
+                  class="fa-solid fa-check text-brand-sage mt-1 mr-3"></i><span>Skills
+                  Development Workshops</span></li>
+              <li class="flex items-start"><i
+                  class="fa-solid fa-check text-brand-sage mt-1 mr-3"></i><span>Peer-Led
+                  Sessions</span></li>
+            </ul>
+          </div>
+          <div id="service-family"
+            class="bg-gradient-to-br from-brand-teal/10 to-brand-sage/10 p-8 rounded-3xl hover-lift">
+            <div
+              class="w-16 h-16 bg-brand-teal rounded-2xl flex items-center justify-center mb-6">
+              <i class="fa-solid fa-house-heart text-white text-2xl"></i></div>
+            <h3 class="text-2xl font-serif font-semibold text-brand-navy mb-4">
+              Family Wellness</h3>
+            <p class="text-gray-700 leading-relaxed mb-6">
+              Strengthen family bonds and improve communication with our
+              family-centered therapeutic approach that addresses relationship
+              dynamics and promotes healing.
+            </p>
+            <ul class="space-y-3 text-gray-700">
+              <li class="flex items-start"><i
+                  class="fa-solid fa-check text-brand-teal mt-1 mr-3"></i><span>Family
+                  Counseling</span></li>
+              <li class="flex items-start"><i
+                  class="fa-solid fa-check text-brand-teal mt-1 mr-3"></i><span>Couples
+                  Therapy</span></li>
+              <li class="flex items-start"><i
+                  class="fa-solid fa-check text-brand-teal mt-1 mr-3"></i><span>Parenting
+                  Support</span></li>
+            </ul>
+          </div>
+          <div id="service-substance"
+            class="bg-gradient-to-br from-brand-sage/10 to-brand-teal/10 p-8 rounded-3xl hover-lift">
+            <div
+              class="w-16 h-16 bg-brand-sage rounded-2xl flex items-center justify-center mb-6">
+              <i
+                class="fa-solid fa-hands-holding-circle text-white text-2xl"></i>
+            </div>
+            <h3 class="text-2xl font-serif font-semibold text-brand-navy mb-4">
+              Substance Use Treatment</h3>
+            <p class="text-gray-700 leading-relaxed mb-6">
+              Comprehensive addiction treatment programs that address the root
+              causes of substance use while providing tools for lasting recovery
+              and relapse prevention.
+            </p>
+            <ul class="space-y-3 text-gray-700">
+              <li class="flex items-start"><i
+                  class="fa-solid fa-check text-brand-sage mt-1 mr-3"></i><span>Addiction
+                  Counseling</span></li>
+              <li class="flex items-start"><i
+                  class="fa-solid fa-check text-brand-sage mt-1 mr-3"></i><span>Recovery
+                  Support</span></li>
+              <li class="flex items-start"><i
+                  class="fa-solid fa-check text-brand-sage mt-1 mr-3"></i><span>Relapse
+                  Prevention</span></li>
+            </ul>
+          </div>
+          <div id="service-coaching"
+            class="bg-gradient-to-br from-brand-teal/10 to-brand-sage/10 p-8 rounded-3xl hover-lift">
+            <div
+              class="w-16 h-16 bg-brand-teal rounded-2xl flex items-center justify-center mb-6">
+              <i class="fa-solid fa-compass text-white text-2xl"></i></div>
+            <h3 class="text-2xl font-serif font-semibold text-brand-navy mb-4">
+              Life Coaching</h3>
+            <p class="text-gray-700 leading-relaxed mb-6">
+              Goal-oriented coaching services that help you identify objectives,
+              overcome obstacles, and create actionable plans for personal and
+              professional success.
+            </p>
+            <ul class="space-y-3 text-gray-700">
+              <li class="flex items-start"><i
+                  class="fa-solid fa-check text-brand-teal mt-1 mr-3"></i><span>Career
+                  Development</span></li>
+              <li class="flex items-start"><i
+                  class="fa-solid fa-check text-brand-teal mt-1 mr-3"></i><span>Personal
+                  Growth</span></li>
+              <li class="flex items-start"><i
+                  class="fa-solid fa-check text-brand-teal mt-1 mr-3"></i><span>Life
+                  Transitions</span></li>
+            </ul>
+          </div>
+          <div id="service-clinical"
+            class="bg-gradient-to-br from-brand-sage/10 to-brand-teal/10 p-8 rounded-3xl hover-lift">
+            <div
+              class="w-16 h-16 bg-brand-sage rounded-2xl flex items-center justify-center mb-6">
+              <i class="fa-solid fa-heart-pulse text-white text-2xl"></i></div>
+            <h3 class="text-2xl font-serif font-semibold text-brand-navy mb-4">
+              Clinical Services</h3>
+            <p class="text-gray-700 leading-relaxed mb-6">
+              Specialized clinical interventions including psychological
+              assessments, treatment planning, and ongoing therapeutic support
+              for complex mental health needs.
+            </p>
+            <ul class="space-y-3 text-gray-700">
+              <li class="flex items-start"><i
+                  class="fa-solid fa-check text-brand-sage mt-1 mr-3"></i><span>Psychological
+                  Assessments</span></li>
+              <li class="flex items-start"><i
+                  class="fa-solid fa-check text-brand-sage mt-1 mr-3"></i><span>Treatment
+                  Planning</span></li>
+              <li class="flex items-start"><i
+                  class="fa-solid fa-check text-brand-sage mt-1 mr-3"></i><span>Crisis
+                  Intervention</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="approach-section" class="py-24 bg-brand-cream">
+      <div class="max-w-7xl mx-auto px-8">
+        <div class="text-center mb-16">
+          <h2 class="text-5xl font-serif font-bold text-brand-navy mb-6">Our
+            Holistic Approach</h2>
+          <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+            We believe in treating the whole person, integrating mind, body, and
+            spirit for comprehensive healing
+          </p>
+        </div>
+        <div class="grid md:grid-cols-4 gap-8">
+          <div id="approach-card-1" class="text-center">
+            <div
+              class="w-24 h-24 bg-white rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg hover-lift">
+              <i class="fa-solid fa-brain text-brand-teal text-4xl"></i></div>
+            <h3 class="text-xl font-semibold text-brand-navy mb-3">
+              Evidence-Based</h3>
+            <p class="text-gray-700">
+              Utilizing proven therapeutic modalities backed by scientific
+              research and clinical best practices
+            </p>
+          </div>
+          <div id="approach-card-2" class="text-center">
+            <div
+              class="w-24 h-24 bg-white rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg hover-lift">
+              <i
+                class="fa-solid fa-hands-holding-heart text-brand-sage text-4xl"></i>
+            </div>
+            <h3 class="text-xl font-semibold text-brand-navy mb-3">Compassionate
+              Care</h3>
+            <p class="text-gray-700">
+              Creating a safe, non-judgmental space where you feel heard,
+              valued, and supported throughout your journey
+            </p>
+          </div>
+          <div id="approach-card-3" class="text-center">
+            <div
+              class="w-24 h-24 bg-white rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg hover-lift">
+              <i class="fa-solid fa-people-group text-brand-teal text-4xl"></i>
+            </div>
+            <h3 class="text-xl font-semibold text-brand-navy mb-3">Collaborative
+            </h3>
+            <p class="text-gray-700">
+              Working together as partners in your healing process, respecting
+              your autonomy and unique perspective
+            </p>
+          </div>
+          <div id="approach-card-4" class="text-center">
+            <div
+              class="w-24 h-24 bg-white rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg hover-lift">
+              <i class="fa-solid fa-spa text-brand-sage text-4xl"></i></div>
+            <h3 class="text-xl font-semibold text-brand-navy mb-3">Holistic
+              Integration</h3>
+            <p class="text-gray-700">
+              Addressing physical, emotional, mental, and spiritual dimensions
+              of wellness for complete healing
+            </p>
+          </div>
+        </div>
+        <div class="mt-16 bg-white rounded-3xl p-12 shadow-xl">
+          <div class="grid md:grid-cols-2 gap-12 items-center">
+            <div>
+              <h3
+                class="text-3xl font-serif font-semibold text-brand-navy mb-6">
+                Why Choose Andrea &amp; Associates?</h3>
+              <div class="space-y-4">
+                <div class="flex items-start">
+                  <div
+                    class="w-8 h-8 bg-brand-teal/20 rounded-full flex items-center justify-center mr-4 mt-1 flex-shrink-0">
+                    <i class="fa-solid fa-check text-brand-teal"></i></div>
+                  <div>
+                    <h4 class="font-semibold text-brand-navy mb-1">Licensed
+                      &amp; Experienced Professionals</h4>
+                    <p class="text-gray-700">Our team consists of highly
+                      qualified therapists with extensive experience in diverse
+                      therapeutic modalities.</p>
+                  </div>
+                </div>
+                <div class="flex items-start">
+                  <div
+                    class="w-8 h-8 bg-brand-teal/20 rounded-full flex items-center justify-center mr-4 mt-1 flex-shrink-0">
+                    <i class="fa-solid fa-check text-brand-teal"></i></div>
+                  <div>
+                    <h4 class="font-semibold text-brand-navy mb-1">Personalized
+                      Treatment Plans</h4>
+                    <p class="text-gray-700">Every client receives a customized
+                      approach tailored to their unique needs, goals, and
+                      circumstances.</p>
+                  </div>
+                </div>
+                <div class="flex items-start">
+                  <div
+                    class="w-8 h-8 bg-brand-teal/20 rounded-full flex items-center justify-center mr-4 mt-1 flex-shrink-0">
+                    <i class="fa-solid fa-check text-brand-teal"></i></div>
+                  <div>
+                    <h4 class="font-semibold text-brand-navy mb-1">Flexible
+                      Scheduling Options</h4>
+                    <p class="text-gray-700">We offer convenient appointment
+                      times including evenings and weekends to fit your busy
+                      lifestyle.</p>
+                  </div>
+                </div>
+                <div class="flex items-start">
+                  <div
+                    class="w-8 h-8 bg-brand-teal/20 rounded-full flex items-center justify-center mr-4 mt-1 flex-shrink-0">
+                    <i class="fa-solid fa-check text-brand-teal"></i></div>
+                  <div>
+                    <h4 class="font-semibold text-brand-navy mb-1">Confidential
+                      &amp; Safe Environment</h4>
+                    <p class="text-gray-700">Your privacy and comfort are our
+                      top priorities in every session and interaction.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div><img
+                src="https://storage.googleapis.com/uxpilot-auth.appspot.com/f57b50a620-592d37b3eaaae6ebe007.png"
+                alt="peaceful therapy office interior, comfortable seating, natural plants, warm lighting, professional counseling space"
+                class="w-full h-[500px] object-cover rounded-2xl shadow-lg">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="team" class="py-24 bg-white">
+      <div class="max-w-7xl mx-auto px-8">
+        <div class="text-center mb-16">
+          <h2 class="text-5xl font-serif font-bold text-brand-navy mb-6">Meet
+            Our Expert Team</h2>
+          <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+            Our diverse team of licensed therapists and counselors brings
+            decades of combined experience and specialized expertise
+          </p>
+        </div>
+        <div class="grid md:grid-cols-4 gap-8 mb-12">
+          <div id="team-member-1"
+            class="bg-brand-cream rounded-3xl overflow-hidden hover-lift">
+            <div class="h-80 overflow-hidden"><img
+                src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-1.jpg"
+                alt="Andrea Thompson" class="w-full h-full object-cover"></div>
+            <div class="p-6">
+              <h3 class="text-xl font-semibold text-brand-navy mb-1">Andrea
+                Thompson</h3>
+              <p class="text-brand-teal font-medium mb-3">Founder &amp; Clinical
+                Director</p>
+              <p class="text-gray-700 text-sm mb-4">Licensed Clinical Social
+                Worker (LCSW) with 20+ years specializing in trauma-informed
+                care and family systems therapy.</p>
+              <div class="flex space-x-3"><a href="#"
+                  class="w-8 h-8 bg-brand-teal rounded-full flex items-center justify-center text-white hover:bg-brand-sage transition-colors"><i
+                    class="fa-brands fa-linkedin-in"></i></a><a href="#"
+                  class="w-8 h-8 bg-brand-teal rounded-full flex items-center justify-center text-white hover:bg-brand-sage transition-colors"><i
+                    class="fa-solid fa-envelope"></i></a></div>
+            </div>
+          </div>
+          <div id="team-member-2"
+            class="bg-brand-cream rounded-3xl overflow-hidden hover-lift">
+            <div class="h-80 overflow-hidden"><img
+                src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-2.jpg"
+                alt="Dr. Michael Chen" class="w-full h-full object-cover"></div>
+            <div class="p-6">
+              <h3 class="text-xl font-semibold text-brand-navy mb-1">Dr. Michael
+                Chen</h3>
+              <p class="text-brand-teal font-medium mb-3">Clinical Psychologist
+              </p>
+              <p class="text-gray-700 text-sm mb-4">Ph.D. in Clinical
+                Psychology, specializing in CBT, anxiety disorders, and
+                evidence-based interventions.</p>
+              <div class="flex space-x-3"><a href="#"
+                  class="w-8 h-8 bg-brand-teal rounded-full flex items-center justify-center text-white hover:bg-brand-sage transition-colors"><i
+                    class="fa-brands fa-linkedin-in"></i></a><a href="#"
+                  class="w-8 h-8 bg-brand-teal rounded-full flex items-center justify-center text-white hover:bg-brand-sage transition-colors"><i
+                    class="fa-solid fa-envelope"></i></a></div>
+            </div>
+          </div>
+          <div id="team-member-3"
+            class="bg-brand-cream rounded-3xl overflow-hidden hover-lift">
+            <div class="h-80 overflow-hidden"><img
+                src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-5.jpg"
+                alt="Sarah Martinez" class="w-full h-full object-cover"></div>
+            <div class="p-6">
+              <h3 class="text-xl font-semibold text-brand-navy mb-1">Sarah
+                Martinez</h3>
+              <p class="text-brand-teal font-medium mb-3">Marriage &amp; Family
+                Therapist</p>
+              <p class="text-gray-700 text-sm mb-4">LMFT with expertise in
+                couples counseling, family dynamics, and relationship conflict
+                resolution.</p>
+              <div class="flex space-x-3"><a href="#"
+                  class="w-8 h-8 bg-brand-teal rounded-full flex items-center justify-center text-white hover:bg-brand-sage transition-colors"><i
+                    class="fa-brands fa-linkedin-in"></i></a><a href="#"
+                  class="w-8 h-8 bg-brand-teal rounded-full flex items-center justify-center text-white hover:bg-brand-sage transition-colors"><i
+                    class="fa-solid fa-envelope"></i></a></div>
+            </div>
+          </div>
+          <div id="team-member-4"
+            class="bg-brand-cream rounded-3xl overflow-hidden hover-lift">
+            <div class="h-80 overflow-hidden"><img
+                src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-8.jpg"
+                alt="James Wilson" class="w-full h-full object-cover"></div>
+            <div class="p-6">
+              <h3 class="text-xl font-semibold text-brand-navy mb-1">James
+                Wilson</h3>
+              <p class="text-brand-teal font-medium mb-3">Addiction Specialist
+              </p>
+              <p class="text-gray-700 text-sm mb-4">Licensed Alcohol &amp; Drug
+                Counselor (LADC) with 15 years in substance use treatment and
+                recovery support.</p>
+              <div class="flex space-x-3"><a href="#"
+                  class="w-8 h-8 bg-brand-teal rounded-full flex items-center justify-center text-white hover:bg-brand-sage transition-colors"><i
+                    class="fa-brands fa-linkedin-in"></i></a><a href="#"
+                  class="w-8 h-8 bg-brand-teal rounded-full flex items-center justify-center text-white hover:bg-brand-sage transition-colors"><i
+                    class="fa-solid fa-envelope"></i></a></div>
+            </div>
+          </div>
+        </div>
+        <div class="grid md:grid-cols-3 gap-8">
+          <div id="team-member-5"
+            class="bg-brand-cream rounded-3xl overflow-hidden hover-lift">
+            <div class="h-80 overflow-hidden"><img
+                src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-6.jpg"
+                alt="Emily Roberts" class="w-full h-full object-cover"></div>
+            <div class="p-6">
+              <h3 class="text-xl font-semibold text-brand-navy mb-1">Emily
+                Roberts</h3>
+              <p class="text-brand-teal font-medium mb-3">Child &amp; Adolescent
+                Therapist</p>
+              <p class="text-gray-700 text-sm mb-4">Specializing in play
+                therapy, youth counseling, and developmental psychology.</p>
+              <div class="flex space-x-3"><a href="#"
+                  class="w-8 h-8 bg-brand-teal rounded-full flex items-center justify-center text-white hover:bg-brand-sage transition-colors"><i
+                    class="fa-brands fa-linkedin-in"></i></a><a href="#"
+                  class="w-8 h-8 bg-brand-teal rounded-full flex items-center justify-center text-white hover:bg-brand-sage transition-colors"><i
+                    class="fa-solid fa-envelope"></i></a></div>
+            </div>
+          </div>
+          <div id="team-member-6"
+            class="bg-brand-cream rounded-3xl overflow-hidden hover-lift">
+            <div class="h-80 overflow-hidden"><img
+                src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-3.jpg"
+                alt="David Park" class="w-full h-full object-cover"></div>
+            <div class="p-6">
+              <h3 class="text-xl font-semibold text-brand-navy mb-1">David Park
+              </h3>
+              <p class="text-brand-teal font-medium mb-3">Group Therapy
+                Coordinator</p>
+              <p class="text-gray-700 text-sm mb-4">Experienced in facilitating
+                therapeutic groups and community support programs.</p>
+              <div class="flex space-x-3"><a href="#"
+                  class="w-8 h-8 bg-brand-teal rounded-full flex items-center justify-center text-white hover:bg-brand-sage transition-colors"><i
+                    class="fa-brands fa-linkedin-in"></i></a><a href="#"
+                  class="w-8 h-8 bg-brand-teal rounded-full flex items-center justify-center text-white hover:bg-brand-sage transition-colors"><i
+                    class="fa-solid fa-envelope"></i></a></div>
+            </div>
+          </div>
+          <div id="team-member-7"
+            class="bg-brand-cream rounded-3xl overflow-hidden hover-lift">
+            <div class="h-80 overflow-hidden"><img
+                src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-7.jpg"
+                alt="Dr. Rachel Green" class="w-full h-full object-cover"></div>
+            <div class="p-6">
+              <h3 class="text-xl font-semibold text-brand-navy mb-1">Dr. Rachel
+                Green</h3>
+              <p class="text-brand-teal font-medium mb-3">Wellness Coach</p>
+              <p class="text-gray-700 text-sm mb-4">Holistic life coach focusing
+                on mindfulness, stress management, and personal development.</p>
+              <div class="flex space-x-3"><a href="#"
+                  class="w-8 h-8 bg-brand-teal rounded-full flex items-center justify-center text-white hover:bg-brand-sage transition-colors"><i
+                    class="fa-brands fa-linkedin-in"></i></a><a href="#"
+                  class="w-8 h-8 bg-brand-teal rounded-full flex items-center justify-center text-white hover:bg-brand-sage transition-colors"><i
+                    class="fa-solid fa-envelope"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="testimonials" class="py-24 bg-brand-cream">
+      <div class="max-w-7xl mx-auto px-8">
+        <div class="text-center mb-16">
+          <h2 class="text-5xl font-serif font-bold text-brand-navy mb-6">Client
+            Testimonials</h2>
+          <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+            Hear from those whose lives have been transformed through our
+            compassionate care and therapeutic support
+          </p>
+        </div>
+        <div class="grid md:grid-cols-3 gap-8">
+          <div id="testimonial-1"
+            class="bg-white p-8 rounded-3xl shadow-lg hover-lift">
+            <div class="flex items-center mb-6"><img
+                src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-4.jpg"
+                alt="Client" class="w-16 h-16 rounded-full object-cover mr-4">
+              <div>
+                <h4 class="font-semibold text-brand-navy">Jennifer L.</h4>
+                <div class="flex text-yellow-500"><i
+                    class="fa-solid fa-star"></i><i
+                    class="fa-solid fa-star"></i><i
+                    class="fa-solid fa-star"></i><i
+                    class="fa-solid fa-star"></i><i
+                    class="fa-solid fa-star"></i></div>
+              </div>
+            </div>
+            <p class="text-gray-700 italic leading-relaxed">
+              "Andrea &amp; Associates changed my life. After years of
+              struggling with anxiety, I finally found a place where I felt
+              truly understood. The therapists here are not just
+              professionals—they're genuine, caring people who helped me
+              rediscover myself."
+            </p>
+          </div>
+          <div id="testimonial-2"
+            class="bg-white p-8 rounded-3xl shadow-lg hover-lift">
+            <div class="flex items-center mb-6"><img
+                src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-9.jpg"
+                alt="Client" class="w-16 h-16 rounded-full object-cover mr-4">
+              <div>
+                <h4 class="font-semibold text-brand-navy">Marcus T.</h4>
+                <div class="flex text-yellow-500"><i
+                    class="fa-solid fa-star"></i><i
+                    class="fa-solid fa-star"></i><i
+                    class="fa-solid fa-star"></i><i
+                    class="fa-solid fa-star"></i><i
+                    class="fa-solid fa-star"></i></div>
+              </div>
+            </div>
+            <p class="text-gray-700 italic leading-relaxed">
+              "The substance use treatment program here saved my life. The
+              team's holistic approach addressed not just my addiction but the
+              underlying issues I'd been avoiding. I'm now 2 years sober and
+              thriving."
+            </p>
+          </div>
+          <div id="testimonial-3"
+            class="bg-white p-8 rounded-3xl shadow-lg hover-lift">
+            <div class="flex items-center mb-6"><img
+                src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-5.jpg"
+                alt="Client" class="w-16 h-16 rounded-full object-cover mr-4">
+              <div>
+                <h4 class="font-semibold text-brand-navy">Patricia &amp; John M.
+                </h4>
+                <div class="flex text-yellow-500"><i
+                    class="fa-solid fa-star"></i><i
+                    class="fa-solid fa-star"></i><i
+                    class="fa-solid fa-star"></i><i
+                    class="fa-solid fa-star"></i><i
+                    class="fa-solid fa-star"></i></div>
+              </div>
+            </div>
+            <p class="text-gray-700 italic leading-relaxed">
+              "Our marriage was on the brink of divorce. Through couples therapy
+              here, we learned to communicate again and rebuild the trust we'd
+              lost. We're now stronger than ever and can't thank the team
+              enough."
+            </p>
+          </div>
+        </div>
+        <div class="mt-12 grid md:grid-cols-2 gap-8">
+          <div id="testimonial-4"
+            class="bg-white p-8 rounded-3xl shadow-lg hover-lift">
+            <div class="flex items-center mb-6"><img
+                src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-7.jpg"
+                alt="Client" class="w-16 h-16 rounded-full object-cover mr-4">
+              <div>
+                <h4 class="font-semibold text-brand-navy">Lisa K.</h4>
+                <div class="flex text-yellow-500"><i
+                    class="fa-solid fa-star"></i><i
+                    class="fa-solid fa-star"></i><i
+                    class="fa-solid fa-star"></i><i
+                    class="fa-solid fa-star"></i><i
+                    class="fa-solid fa-star"></i></div>
+              </div>
+            </div>
+            <p class="text-gray-700 italic leading-relaxed">
+              "The group therapy sessions provided me with a sense of community
+              I didn't know I needed. Sharing experiences with others facing
+              similar challenges was incredibly healing. I no longer feel alone
+              in my journey."
+            </p>
+          </div>
+          <div id="testimonial-5"
+            class="bg-white p-8 rounded-3xl shadow-lg hover-lift">
+            <div class="flex items-center mb-6"><img
+                src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-8.jpg"
+                alt="Client" class="w-16 h-16 rounded-full object-cover mr-4">
+              <div>
+                <h4 class="font-semibold text-brand-navy">Robert S.</h4>
+                <div class="flex text-yellow-500"><i
+                    class="fa-solid fa-star"></i><i
+                    class="fa-solid fa-star"></i><i
+                    class="fa-solid fa-star"></i><i
+                    class="fa-solid fa-star"></i><i
+                    class="fa-solid fa-star"></i></div>
+              </div>
+            </div>
+            <p class="text-gray-700 italic leading-relaxed">
+              "After a traumatic experience, I thought I'd never feel normal
+              again. The trauma-informed care I received here was exactly what I
+              needed. My therapist was patient, knowledgeable, and helped me
+              reclaim my life."
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="resources" class="py-24 bg-white">
+      <div class="max-w-7xl mx-auto px-8">
+        <div class="text-center mb-16">
+          <h2 class="text-5xl font-serif font-bold text-brand-navy mb-6">
+            Resources &amp; Support</h2>
+          <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+            Access helpful tools, articles, and information to support your
+            mental health journey
+          </p>
+        </div>
+        <div class="grid md:grid-cols-2 gap-8 mb-12">
+          <div id="resource-blog"
+            class="bg-brand-cream rounded-3xl p-8 hover-lift">
+            <div class="flex items-start">
+              <div
+                class="w-16 h-16 bg-brand-teal rounded-2xl flex items-center justify-center mr-6 flex-shrink-0">
+                <i class="fa-solid fa-book-open text-white text-2xl"></i></div>
+              <div>
+                <h3
+                  class="text-2xl font-serif font-semibold text-brand-navy mb-3">
+                  Mental Health Blog</h3>
+                <p class="text-gray-700 mb-4">
+                  Explore our collection of articles covering topics from
+                  anxiety management to relationship building, written by our
+                  expert team.
+                </p><a href="#"
+                  class="text-brand-teal font-semibold hover:text-brand-sage transition-colors inline-flex items-center">
+                  Read Articles <i class="fa-solid fa-arrow-right ml-2"></i></a>
+              </div>
+            </div>
+          </div>
+          <div id="resource-workshops"
+            class="bg-brand-cream rounded-3xl p-8 hover-lift">
+            <div class="flex items-start">
+              <div
+                class="w-16 h-16 bg-brand-sage rounded-2xl flex items-center justify-center mr-6 flex-shrink-0">
+                <i class="fa-solid fa-chalkboard-user text-white text-2xl"></i>
+              </div>
+              <div>
+                <h3
+                  class="text-2xl font-serif font-semibold text-brand-navy mb-3">
+                  Workshops &amp; Events</h3>
+                <p class="text-gray-700 mb-4">
+                  Join our upcoming workshops, webinars, and community events
+                  designed to promote wellness and personal growth.
+                </p><a href="#"
+                  class="text-brand-sage font-semibold hover:text-brand-teal transition-colors inline-flex items-center">
+                  View Schedule <i class="fa-solid fa-arrow-right ml-2"></i></a>
+              </div>
+            </div>
+          </div>
+          <div id="resource-crisis"
+            class="bg-brand-cream rounded-3xl p-8 hover-lift">
+            <div class="flex items-start">
+              <div
+                class="w-16 h-16 bg-brand-teal rounded-2xl flex items-center justify-center mr-6 flex-shrink-0">
+                <i class="fa-solid fa-phone text-white text-2xl"></i></div>
+              <div>
+                <h3
+                  class="text-2xl font-serif font-semibold text-brand-navy mb-3">
+                  Crisis Resources</h3>
+                <p class="text-gray-700 mb-4">
+                  Access immediate support through crisis hotlines, emergency
+                  contacts, and 24/7 mental health resources.
+                </p><a href="#"
+                  class="text-brand-teal font-semibold hover:text-brand-sage transition-colors inline-flex items-center">
+                  Get Help Now <i class="fa-solid fa-arrow-right ml-2"></i></a>
+              </div>
+            </div>
+          </div>
+          <div id="resource-self-care"
+            class="bg-brand-cream rounded-3xl p-8 hover-lift">
+            <div class="flex items-start">
+              <div
+                class="w-16 h-16 bg-brand-sage rounded-2xl flex items-center justify-center mr-6 flex-shrink-0">
+                <i class="fa-solid fa-heart text-white text-2xl"></i></div>
+              <div>
+                <h3
+                  class="text-2xl font-serif font-semibold text-brand-navy mb-3">
+                  Self-Care Tools</h3>
+                <p class="text-gray-700 mb-4">
+                  Download guided meditations, worksheets, and practical
+                  exercises to support your daily wellness practice.
+                </p><a href="#"
+                  class="text-brand-sage font-semibold hover:text-brand-teal transition-colors inline-flex items-center">
+                  Download Tools <i
+                    class="fa-solid fa-arrow-right ml-2"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="bg-gradient-to-r from-brand-teal to-brand-sage rounded-3xl p-12 text-white text-center">
+          <h3 class="text-3xl font-serif font-semibold mb-4">Subscribe to Our
+            Newsletter</h3>
+          <p class="text-lg mb-8 max-w-2xl mx-auto">
+            Receive monthly mental health tips, wellness resources, and updates
+            on upcoming events delivered to your inbox
+          </p>
+          <form class="max-w-xl mx-auto flex gap-4"><input type="email"
+              placeholder="Enter your email address"
+              class="flex-1 px-6 py-4 rounded-full text-gray-900 focus:outline-none focus:ring-2 focus:ring-white"><button
+              type="submit"
+              class="bg-white text-brand-teal px-8 py-4 rounded-full font-semibold hover:bg-brand-cream transition-colors">
+              Subscribe
+            </button></form>
+        </div>
+      </div>
+    </section>
+    <section id="faq-section" class="py-24 bg-brand-cream">
+      <div class="max-w-4xl mx-auto px-8">
+        <div class="text-center mb-16">
+          <h2 class="text-5xl font-serif font-bold text-brand-navy mb-6">
+            Frequently Asked Questions</h2>
+          <p class="text-xl text-gray-600">
+            Find answers to common questions about our services, insurance, and
+            getting started
+          </p>
+        </div>
+        <div class="space-y-6">
+          <div id="faq-1" class="bg-white rounded-2xl p-8 shadow-lg hover-lift">
+            <h3 class="text-xl font-semibold text-brand-navy mb-3">Do you accept
+              insurance?</h3>
+            <p class="text-gray-700 leading-relaxed">
+              Yes, we accept most major insurance plans. We recommend contacting
+              your insurance provider to verify coverage and benefits. Our
+              administrative team is also happy to assist with insurance
+              questions and can provide superbills for out-of-network
+              reimbursement.
+            </p>
+          </div>
+          <div id="faq-2" class="bg-white rounded-2xl p-8 shadow-lg hover-lift">
+            <h3 class="text-xl font-semibold text-brand-navy mb-3">How do I
+              schedule my first appointment?</h3>
+            <p class="text-gray-700 leading-relaxed">
+              Scheduling is easy! You can call us at (860) 754-3672, email us at
+              manage@andreateam.net, or use our online booking system. We'll
+              match you with the right therapist based on your needs and
+              schedule a convenient time for your initial consultation.
+            </p>
+          </div>
+          <div id="faq-3" class="bg-white rounded-2xl p-8 shadow-lg hover-lift">
+            <h3 class="text-xl font-semibold text-brand-navy mb-3">What should I
+              expect in my first session?</h3>
+            <p class="text-gray-700 leading-relaxed">
+              Your first session is an opportunity to get to know your therapist
+              and discuss what brings you to therapy. We'll review your history,
+              current concerns, and goals. This is also a chance for you to ask
+              questions and ensure you feel comfortable with your therapist.
+            </p>
+          </div>
+          <div id="faq-4" class="bg-white rounded-2xl p-8 shadow-lg hover-lift">
+            <h3 class="text-xl font-semibold text-brand-navy mb-3">Do you offer
+              virtual/telehealth sessions?</h3>
+            <p class="text-gray-700 leading-relaxed">
+              Yes! We offer secure telehealth sessions for clients who prefer
+              virtual appointments or cannot attend in person. Our
+              HIPAA-compliant platform ensures your privacy and provides the
+              same quality care as in-office sessions.
+            </p>
+          </div>
+          <div id="faq-5" class="bg-white rounded-2xl p-8 shadow-lg hover-lift">
+            <h3 class="text-xl font-semibold text-brand-navy mb-3">How long does
+              therapy typically last?</h3>
+            <p class="text-gray-700 leading-relaxed">
+              The duration of therapy varies based on individual needs and
+              goals. Some clients benefit from short-term focused therapy (8-12
+              sessions), while others engage in longer-term treatment. We'll
+              work with you to create a treatment plan that aligns with your
+              objectives.
+            </p>
+          </div>
+          <div id="faq-6" class="bg-white rounded-2xl p-8 shadow-lg hover-lift">
+            <h3 class="text-xl font-semibold text-brand-navy mb-3">Is everything
+              I share confidential?</h3>
+            <p class="text-gray-700 leading-relaxed">
+              Absolutely. Confidentiality is a cornerstone of therapy.
+              Information shared in sessions is protected by law, with rare
+              exceptions (such as imminent danger to self or others). We'll
+              review confidentiality policies during your first session.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact" class="py-24 bg-white">
+      <div class="max-w-7xl mx-auto px-8">
+        <div class="text-center mb-16">
+          <h2 class="text-5xl font-serif font-bold text-brand-navy mb-6">Get In
+            Touch</h2>
+          <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+            Ready to begin your journey to wellness? Contact us today to
+            schedule your consultation
+          </p>
+        </div>
+        <div class="grid md:grid-cols-2 gap-12">
+          <div id="contact-info">
+            <div class="bg-brand-cream rounded-3xl p-10 mb-8">
+              <h3
+                class="text-2xl font-serif font-semibold text-brand-navy mb-6">
+                Contact Information</h3>
+              <div class="space-y-6">
+                <div class="flex items-start">
+                  <div
+                    class="w-12 h-12 bg-brand-teal rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                    <i class="fa-solid fa-phone text-white"></i></div>
+                  <div>
+                    <h4 class="font-semibold text-brand-navy mb-1">Phone</h4><a
+                      href="tel:8607543672"
+                      class="text-gray-700 hover:text-brand-teal transition-colors">(860)
+                      754-3672</a>
+                  </div>
+                </div>
+                <div class="flex items-start">
+                  <div
+                    class="w-12 h-12 bg-brand-teal rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                    <i class="fa-solid fa-envelope text-white"></i></div>
+                  <div>
+                    <h4 class="font-semibold text-brand-navy mb-1">Email</h4><a
+                      href="mailto:manage@andreateam.net"
+                      class="text-gray-700 hover:text-brand-teal transition-colors">manage@andreateam.net</a>
+                  </div>
+                </div>
+                <div class="flex items-start">
+                  <div
+                    class="w-12 h-12 bg-brand-teal rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                    <i class="fa-solid fa-clock text-white"></i></div>
+                  <div>
+                    <h4 class="font-semibold text-brand-navy mb-1">Office Hours
+                    </h4>
+                    <p class="text-gray-700">Monday - Friday: 8:00 AM - 8:00 PM
+                    </p>
+                    <p class="text-gray-700">Saturday: 9:00 AM - 5:00 PM</p>
+                    <p class="text-gray-700">Sunday: By Appointment</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="bg-gradient-to-br from-brand-teal to-brand-sage rounded-3xl p-10 text-white">
+              <h3 class="text-2xl font-serif font-semibold mb-4">Why Choose Us?
+              </h3>
+              <ul class="space-y-4">
+                <li class="flex items-start"><i
+                    class="fa-solid fa-check-circle mr-3 mt-1"></i><span>Licensed
+                    &amp; experienced professionals</span></li>
+                <li class="flex items-start"><i
+                    class="fa-solid fa-check-circle mr-3 mt-1"></i><span>Flexible
+                    scheduling including evenings &amp; weekends</span></li>
+                <li class="flex items-start"><i
+                    class="fa-solid fa-check-circle mr-3 mt-1"></i><span>In-person
+                    and telehealth options</span></li>
+                <li class="flex items-start"><i
+                    class="fa-solid fa-check-circle mr-3 mt-1"></i><span>Most
+                    insurance plans accepted</span></li>
+                <li class="flex items-start"><i
+                    class="fa-solid fa-check-circle mr-3 mt-1"></i><span>Confidential
+                    &amp; compassionate care</span></li>
+              </ul>
+            </div>
+          </div>
+          <div id="contact-form">
+            <form class="bg-brand-cream rounded-3xl p-10">
+              <h3
+                class="text-2xl font-serif font-semibold text-brand-navy mb-6">
+                Send Us a Message</h3>
+              <div class="space-y-6">
+                <div><label class="block text-brand-navy font-medium mb-2">Full
+                    Name *</label><input type="text" required=""
+                    placeholder="John Doe"
+                    class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-brand-teal">
+                </div>
+                <div><label class="block text-brand-navy font-medium mb-2">Email
+                    Address *</label><input type="email" required=""
+                    placeholder="john@example.com"
+                    class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-brand-teal">
+                </div>
+                <div><label class="block text-brand-navy font-medium mb-2">Phone
+                    Number</label><input type="tel" placeholder="(860) 123-4567"
+                    class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-brand-teal">
+                </div>
+                <div><label
+                    class="block text-brand-navy font-medium mb-2">Service
+                    Interest</label><select
+                    class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-brand-teal">
+                    <option>Select a service</option>
+                    <option>Individual Therapy</option>
+                    <option>Group Therapy</option>
+                    <option>Family Wellness</option>
+                    <option>Substance Use Treatment</option>
+                    <option>Life Coaching</option>
+                    <option>Other</option>
+                  </select></div>
+                <div><label
+                    class="block text-brand-navy font-medium mb-2">Message
+                    *</label><textarea required="" rows="5" placeholder="Tell us how we can help you..." class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-brand-teal"></textarea>
+                </div><button type="submit"
+                  class="w-full bg-brand-teal text-white py-4 rounded-xl font-semibold hover:bg-brand-sage transition-colors shadow-lg">
+                  Send Message
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="highlight-section"
+      class="relative h-[600px] flex items-center justify-center overflow-hidden">
+      <div class="absolute inset-0"><img
+          src="https://storage.googleapis.com/uxpilot-auth.appspot.com/4dedc97e12-ede8fa993e33d3c89976.png"
+          alt="serene meditation space, peaceful wellness center, natural sunlight, plants, calming atmosphere, mental health sanctuary"
+          class="w-full h-full object-cover">
+        <div
+          class="absolute inset-0 bg-gradient-to-r from-brand-teal/90 to-brand-sage/90">
+        </div>
+      </div>
+      <div class="relative z-10 max-w-5xl mx-auto px-8 text-center">
+        <h2 class="text-5xl md:text-6xl font-serif font-bold text-white mb-6">
+          Your Mental Health Matters
+        </h2>
+        <p class="text-2xl text-white/95 mb-8 font-light max-w-3xl mx-auto">
+          Taking the first step toward healing is an act of courage. We're here
+          to support you every step of the way with compassionate, professional
+          care.
+        </p>
+        <div class="flex justify-center gap-6"><a href="#contact"
+            class="bg-white text-brand-teal px-10 py-5 rounded-full font-semibold text-lg hover:bg-brand-cream hover:scale-105 transition-all duration-300 shadow-2xl">
+            Start Your Journey Today
+          </a></div>
+        <div class="mt-16 grid grid-cols-3 gap-8 max-w-3xl mx-auto">
+          <div class="text-center">
+            <div class="text-4xl font-bold text-white mb-2">98%</div>
+            <div class="text-white/90">Client Satisfaction</div>
+          </div>
+          <div class="text-center">
+            <div class="text-4xl font-bold text-white mb-2">15+</div>
+            <div class="text-white/90">Years of Excellence</div>
+          </div>
+          <div class="text-center">
+            <div class="text-4xl font-bold text-white mb-2">24/7</div>
+            <div class="text-white/90">Crisis Support</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer id="footer" class="bg-brand-teal text-white pt-16 pb-8">
+      <div class="max-w-7xl mx-auto px-8">
+        <div class="grid md:grid-cols-4 gap-12 mb-12">
+          <div id="footer-about"><img
+              src="https://static.wixstatic.com/media/b6cbd2_9ffc3d88afcf47b1992aaa7cf810abe0~mv2.png/v1/fill/w_112,h_110,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Screen%20Shot%202022-10-19%20at%204_28_edited_pn.png"
+              alt="Andrea &amp; Associates" class="h-20 mb-4">
+            <p class="text-white/80 leading-relaxed mb-4">
+              Compassionate mental health services for individuals, families,
+              and groups. Your journey to wellness starts here.
+            </p>
+            <div class="flex space-x-4"><a href="#"
+                class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-white/20 transition-colors"><i
+                  class="fa-brands fa-facebook-f"></i></a><a href="#"
+                class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-white/20 transition-colors"><i
+                  class="fa-brands fa-instagram"></i></a><a href="#"
+                class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-white/20 transition-colors"><i
+                  class="fa-brands fa-linkedin-in"></i></a><a href="#"
+                class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-white/20 transition-colors"><i
+                  class="fa-brands fa-twitter"></i></a></div>
+          </div>
+          <div id="footer-services">
+            <h4 class="text-xl font-serif font-semibold mb-6">Our Services</h4>
+            <ul class="space-y-3">
+              <li><a href="#services"
+                  class="text-white/80 hover:text-white transition-colors">Individual
+                  Therapy</a></li>
+              <li><a href="#services"
+                  class="text-white/80 hover:text-white transition-colors">Group
+                  Therapy</a></li>
+              <li><a href="#services"
+                  class="text-white/80 hover:text-white transition-colors">Family
+                  Wellness</a></li>
+              <li><a href="#services"
+                  class="text-white/80 hover:text-white transition-colors">Substance
+                  Use Treatment</a></li>
+              <li><a href="#services"
+                  class="text-white/80 hover:text-white transition-colors">Life
+                  Coaching</a></li>
+              <li><a href="#services"
+                  class="text-white/80 hover:text-white transition-colors">Clinical
+                  Services</a></li>
+            </ul>
+          </div>
+          <div id="footer-quick-links">
+            <h4 class="text-xl font-serif font-semibold mb-6">Quick Links</h4>
+            <ul class="space-y-3">
+              <li><a href="#about"
+                  class="text-white/80 hover:text-white transition-colors">About
+                  Us</a></li>
+              <li><a href="#team"
+                  class="text-white/80 hover:text-white transition-colors">Our
+                  Team</a></li>
+              <li><a href="#testimonials"
+                  class="text-white/80 hover:text-white transition-colors">Testimonials</a>
+              </li>
+              <li><a href="#resources"
+                  class="text-white/80 hover:text-white transition-colors">Resources</a>
+              </li>
+              <li><a href="#faq-section"
+                  class="text-white/80 hover:text-white transition-colors">FAQ</a>
+              </li>
+              <li><a href="#contact"
+                  class="text-white/80 hover:text-white transition-colors">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <div id="footer-contact">
+            <h4 class="text-xl font-serif font-semibold mb-6">Contact Us</h4>
+            <div class="space-y-4">
+              <div class="flex items-start"><i
+                  class="fa-solid fa-phone mr-3 mt-1"></i>
+                <div>
+                  <p class="text-white/80">(860) 754-3672</p>
+                </div>
+              </div>
+              <div class="flex items-start"><i
+                  class="fa-solid fa-envelope mr-3 mt-1"></i>
+                <div>
+                  <p class="text-white/80">manage@andreateam.net</p>
+                </div>
+              </div>
+              <div class="flex items-start"><i
+                  class="fa-solid fa-clock mr-3 mt-1"></i>
+                <div>
+                  <p class="text-white/80">Mon-Fri: 8AM - 8PM</p>
+                  <p class="text-white/80">Sat: 9AM - 5PM</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="border-t border-white/20 pt-8">
+          <div class="flex flex-col md:flex-row justify-between items-center">
+            <p class="text-white/70 text-sm mb-4 md:mb-0">
+              © 2025 Andrea &amp; Associates. All rights reserved.
+            </p>
+            <div class="flex space-x-6 text-sm"><a href="#"
+                class="text-white/70 hover:text-white transition-colors">Privacy
+                Policy</a><a href="#"
+                class="text-white/70 hover:text-white transition-colors">Terms
+                of Service</a><a href="#"
+                class="text-white/70 hover:text-white transition-colors">HIPAA
+                Compliance</a></div>
+          </div>
+        </div>
+      </div>
+    </footer><a href="#contact" id="chat-bubble"
+      class="fixed bottom-8 right-8 w-16 h-16 bg-brand-sage rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-transform chat-bubble z-50"><i
+        class="fa-solid fa-comments text-white text-2xl"></i></a>
+    <script>
+      window.addEventListener('scroll', function()
+      {
+        const header = document.getElementById('header');
+        if (window.scrollY > 50)
+        {
+          header.classList.add('shadow-xl');
+        }
+        else
+        {
+          header.classList.remove('shadow-xl');
+        }
+      });
+
+      document.querySelectorAll('a[href^="#"]').forEach(anchor =>
+      {
+        anchor.addEventListener('click', function(e)
+        {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute(
+            'href'));
+          if (target)
+          {
+            const headerOffset = 100;
+            const elementPosition = target.getBoundingClientRect().top;
+            const offsetPosition = elementPosition + window
+              .pageYOffset - headerOffset;
+
+            window.scrollTo(
+            {
+              top: offsetPosition,
+              behavior: 'smooth'
+            });
+          }
+        });
+      });
+    </script>
+  </body>
+
+</html>
